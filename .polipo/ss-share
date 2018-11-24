@@ -1,0 +1,6 @@
+#!/bin/bash
+
+
+awk '/proxyPort/{print "share proxy port", $3}' ~/.polipo/config 
+/usr/bin/polipo -c ~/.polipo/config
+
