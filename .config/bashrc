@@ -1,5 +1,7 @@
 
-export PS1='[\[\e[31m\]\u\[\e[0m\]@\h \W]\$ '
+# export PS1='[\[\e[31m\]\u\[\e[0m\]@\h \W]\$ '
+export PS1="[\[\033[38;5;196m\]\u\[\033[0m\]@\h \W]\$ "
+
 export PATH=$PATH:/home/nonu/.local/bin
 
 alias chrome='google-chrome'
@@ -7,4 +9,3 @@ alias here='gnome-open .'
 alias course='eog /mnt/f/Nonu/course.png'
 alias course-time='eog /mnt/f/Nonu/course_time.png'
 alias ss-share="awk '/proxyPort/{print \"share proxy port\", \$3, \"with http protocol by polipo\"}' ~/.polipo/config && ip add | awk '/inet /{print \$2}' && polipo -c ~/.polipo/config"
-
