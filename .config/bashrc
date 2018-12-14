@@ -9,3 +9,5 @@ alias here='gnome-open .'
 alias course='eog /mnt/f/Nonu/course.png'
 alias course-time='eog /mnt/f/Nonu/course_time.png'
 alias ss-share="awk '/proxyPort/{print \"share proxy port\", \$3, \"with http protocol by polipo\"}' ~/.polipo/config && ip add | awk '/inet /{print \$2}' && polipo -c ~/.polipo/config"
+alias matlab-cli='matlab -nodisplay'
+
